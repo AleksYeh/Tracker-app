@@ -42,7 +42,6 @@ function rerenderMenu(activeHabbit) {
       const element = document.createElement("button");
       element.setAttribute("menu_habbit_id", habbit.id);
       element.classList.add("menu__item");
-      console.log(element);
 
       element.addEventListener("click", () => rerender(habbit.id));
       element.innerHTML = `<img src="./images/${habbit.icon}.svg" alt="${habbit.name}"  />`;
