@@ -5,8 +5,14 @@
 body {
   font-family: "Comfortaa", cursive;
   margin: 0;
+  padding: 0;
   background-color: #f3f6fd;
   font-weight: 400;
+}
+
+li, ul{
+  margin: 0;
+  padding: 0;
 }
 
 .app {
