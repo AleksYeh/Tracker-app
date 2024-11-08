@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  margin: 0;
+  background-color: #f3f6fd;
+  font-weight: 400;
+}
+
+.app {
+  display: flex;
+}
+
+.logo {
+  margin-bottom: 50px;
+}
+
+.panel {
+  background: white;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.menu__item {
+  background: #ffffff;
+  box-shadow: 0px 8px 14px rgba(62, 107, 224, 0.12);
+  border-radius: 14px;
+  border: none;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.menu__item:hover {
+  background: #6a6afb;
+}
+
+.menu__item:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.menu__item_active {
+  background: #5051f9;
+}
+
+.menu__item_active img {
+  filter: brightness(0) invert(1);
+}
+
+.menu__add {
+  background: none;
+  border: 1px solid #cad5ff;
+  border-radius: 14px;
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.menu__add:hover {
+  background: #eff2ff;
+}
+
+.content {
+  min-width: 900px;
+  padding: 45px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 235px;
+}
+
+.progress__text {
+  display: flex;
+  justify-content: space-between;
+}
+.progress__name {
+  font-size: 14px;
+  line-height: 16px;
+  color: #232360;
+}
+
+.progress__percent {
+  font-size: 12px;
+  line-height: 13px;
+  color: #768396;
+}
+
+.progress__bar {
+  width: 100%;
+  background: #e6e9ed;
+  border-radius: 4px;
+  height: 5px;
+  position: relative;
+}
+
+.progress__cover-bar {
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  border-radius: 4px;
+  background: #5051f9;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.habbit {
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.habbit__day {
+  background: #fbfaff;
+  border-radius: 10px 0 0 10px;
+  border-right: 1px solid #e7ebfb;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 20px 40px;
+  min-width: 150px;
+}
+
+.habbit__comment {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 20px 25px;
+}
+
+.habbit__delete {
+  margin-left: auto;
+  margin-right: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.habbit__delete:hover {
+  background: #eff2ff;
+}
+
+input {
+  background: #ffffff;
+  border: 1px solid #e7ebfb;
+  border-radius: 9px;
+  padding: 12px 20px;
+  font-family: "Comfortaa", cursive;
+  flex: 1;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+input:placeholder {
+  color: #8899a8;
+}
+
+.habbit__form {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding: 0px 10px 0px 25px;
+  position: relative;
+}
+
+.button {
+  background: #edecfe;
+  border-radius: 9px;
+  border: none;
+  font-size: 13px;
+  line-height: 14px;
+  color: #5051f9;
+  padding: 14px 30px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #dcdaff;
+}
+
+.input_icon {
+  padding-left: 45px;
+}
+
+.input__icon {
+  position: absolute;
+  top: 10px;
+  left: 45px;
+}
